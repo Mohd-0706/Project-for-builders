@@ -554,8 +554,9 @@
 
     .projects-slider-container {
       display: flex;
-      transition: transform 0.5s ease;
+      transition: transform 1.2s ease-in-out;
     }
+
 
     .project-slide {
       min-width: 100%;
@@ -1898,6 +1899,7 @@
         }, 8000);
       }
 
+
       function pauseAutoSlide() {
         isAutoSliding = false;
         clearInterval(autoSlideInterval);
@@ -1912,14 +1914,14 @@
         pauseAutoSlide();
         currentSlide = (currentSlide - 1 + slideCount) % slideCount;
         updateSlider();
-        setTimeout(resumeAutoSlide, 10000);
+        setTimeout(resumeAutoSlide, 8000);
       });
 
       nextBtn.addEventListener("click", function () {
         pauseAutoSlide();
         currentSlide = (currentSlide + 1) % slideCount;
         updateSlider();
-        setTimeout(resumeAutoSlide, 10000);
+        setTimeout(resumeAutoSlide, 1000);
       });
 
       // Initialize slider
