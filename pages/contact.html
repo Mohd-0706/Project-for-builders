@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMS Construction - Contact Page</title>
+  <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="/css/contact/contact.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+      <div class="loader-square"></div>
+    </div>
+  </div>
+
+  <header class="header-container">
+    <div class="logo-container">
+      <img src="/assets/logo/logo.png" alt="IMS Construction Logo" class="logo-img">
+      <div class="logo-text">IMS Construction</div>
+    </div>
+    <nav class="nav-links">
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/pages/about.html" class="nav-link">About Us</a>
+      <a href="/pages/projects.html" class="nav-link">Projects</a>
+      <a href="/pages/sale.html" class="nav-link">Sales</a>
+      <a href="/pages/reviews.html" class="nav-link">Reviews</a>
+      <a href="/pages/contact.html" class="">
+        <button class="cta">Contact</button>
+      </a>
+    </nav>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeBtn">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="/pages/about.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="/pages/projects.html"><i class="fas fa-building"></i> Projects</a>
+    <a href="/pages/sale.html"><i class="fas fa-tag"></i> Sales</a>
+    <a href="/pages/reviews.html"><i class="fas fa-star"></i> Reviews</a>
+    <a href="/pages/contact.html"><i class="fas fa-phone"></i> Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="container">
+        <h1 class="hero-title">Contact Us</h1>
+        <p class="hero-subtitle">Get in touch with our team for your next construction project</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-item">
+            <h3 class="info-title"><i class="fas fa-map-marker-alt"></i> Address</h3>
+            <div class="info-content">
+              <p>No. 8/92,</p>
+              <p>MGR Nagar, Poonamallee,</p>
+              <p>Chennai - 600 0056</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <h3 class="info-title"><i class="fas fa-clock"></i> Business Hours</h3>
+            <div class="info-content">
+              <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+              <p><strong>Saturday:</strong> 9:00 AM - 2:00 PM</p>
+              <p><strong>Sunday:</strong> Closed</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <h3 class="info-title"><i class="fas fa-envelope"></i> Email</h3>
+            <div class="info-content">
+              <p><a href="mailto:info@imsconstructors.com">info@imsconstructors.com</a></p>
+              <p><a href="mailto:support@imsconstructors.com">support@imsconstructors.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <h3 class="info-title"><i class="fas fa-phone"></i> Phone</h3>
+            <div class="info-content">
+              <p><a href="tel:+919600051701">96000 51701</a> (Personal)</p>
+              <p><a href="tel:+914422334455">044 2233 4455</a> (Support)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31092.042960855466!2d80.25766471130417!3d13.06712583443461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748788141746!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 5rem;">Send Us a Message</h2>
+
+      <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" name="message" class="form-input" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+
+          <div id="formFeedback" class="form-feedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="/assets/images/footer/footer-bg.png" class="footer-pattern" alt="Footer Pattern">
+    <div class="footer-content">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="/assets/logo/logo.png" alt="IMS Construction Logo" class="footer-logo-img">
+            <div class="footer-logo-text">IMS Construction</div>
+          </div>
+          <p class="footer-about">
+            IMS Construction is a premier construction company specializing in residential and commercial
+            projects. We
+            combine innovative design with exceptional craftsmanship to deliver buildings that stand the
+            test of time.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/projects.html">Projects</a></li>
+            <li><a href="/pages/sale.html">Sales</a></li>
+            <li><a href="/pages/reviews.html">Client Reviews</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="#">Custom Home Building</a></li>
+            <li><a href="#">Commercial Construction</a></li>
+            <li><a href="#">Architectural Design</a></li>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Renovation Services</a></li>
+            <li><a href="#">Project Management</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <!--<p>&copy; 2025 IMS Construction. All Rights Reserved.</p>-->
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919600051701" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+  <script src="/js/contact/contact.js"></script>
+</body>
+
+</html>
