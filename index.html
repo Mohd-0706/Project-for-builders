@@ -1895,7 +1895,7 @@
             currentSlide = (currentSlide + 1) % slideCount;
             updateSlider();
           }
-        }, 5000);
+        }, 8000);
       }
 
       function pauseAutoSlide() {
@@ -1912,14 +1912,14 @@
         pauseAutoSlide();
         currentSlide = (currentSlide - 1 + slideCount) % slideCount;
         updateSlider();
-        setTimeout(resumeAutoSlide, 8000);
+        setTimeout(resumeAutoSlide, 10000);
       });
 
       nextBtn.addEventListener("click", function () {
         pauseAutoSlide();
         currentSlide = (currentSlide + 1) % slideCount;
         updateSlider();
-        setTimeout(resumeAutoSlide, 8000);
+        setTimeout(resumeAutoSlide, 10000);
       });
 
       // Initialize slider
